@@ -1,0 +1,102 @@
+@keyframes scrollbg {
+	from {
+		background-position: 0px 0px;
+	}
+	to {
+		background-position: 100px 100px;
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+body,
+#__next {
+	padding: 0;
+	margin: 0;
+
+	font-family: "Comic Sans MS";
+	background-image: url("https://thiscatdoesnotexist.com/");
+	background-size: 100px;
+	background-position: 100px 100px;
+
+	animation-name: scrollbg;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+}
+
+body main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+body button {
+	max-width: 700px;
+	padding: 1em 2em;
+	font-family: "Impact";
+	font-size: 30px;
+	background: linear-gradient(red, yellow, green, purple);
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	color: white;
+
+	animation-name: spin;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+
+	cursor: pointer;
+
+	margin-bottom: 100px;
+}
+
+body .fact {
+	max-width: 700px;
+	margin: 50px;
+	margin-bottom: 100px;
+
+	border: solid 3px white;
+}
+
+body .fact p {
+	font-family: "Comic Sans MS";
+	color: white;
+	font-size: 40px;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	background: linear-gradient(red, yellow, green, purple);
+	margin: 0;
+}
+
+body .fact .message {
+	font-weight: bold;
+	font-size: 60px;
+	text-align: center;
+	text-shadow: -5px -5px 4px #222222;
+}
+
+body .fact .description {
+	text-align: center;
+	text-shadow: 5px 5px 3px #222222;
+}
+
+body .fact .title {
+	font-style: italic;
+	text-shadow: -4px -4px 4px #222222;
+	padding: 10px;
+	font-size: 24px;
+	background: green;
+}
+
+body .footer {
+	color: white;
+}
